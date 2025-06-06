@@ -1,0 +1,22 @@
+{
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "text": "Use Python 3.9. Prefer PEP 8 standards with type hints. Write modular, reusable functions. Use meaningful function and class names. Use 4 spaces for indentation. Use logging for diagnostics. Generate data engineering code involving Snowflake SQL queries, ETL pipelines, and dbt model logic. Avoid unnecessary boilerplate. Prefer pandas, SQLAlchemy, and Snowflake Connector for Python. Use dbt Jinja templating for SQL models."
+    }
+  ],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Write clear, descriptive commit messages with context about data sources, transformations, and schema impacts. Focus on ETL/ELT updates, model refactoring, or infrastructure changes. Summarize table/model name changes, performance improvements, and added tests. Avoid emojis, but include bullet points or sections if multiple areas were affected."
+    }
+  ],
+  "github.copilot.chat.reviewSelection.instructions": [
+    {
+      "text": "Ensure Python functions and classes have meaningful docstrings. Check for proper exception handling, logging, and use of context managers for connections. Validate SQL logic and dbt Jinja usage. Confirm that dbt models include proper descriptions, tests, and follow naming conventions. Ensure no hardcoded credentials."
+    }
+  ],
+  "github.copilot.chat.testGeneration.instructions": [
+    {
+      "text": "Use pytest. Follow the Arrange-Act-Assert (AAA) pattern. Use descriptive test function names like test_load_data_into_snowflake_success. Mock external services (e.g., Snowflake, S3). Include negative test cases for invalid inputs and exceptions. For dbt, recommend using dbt tests for uniqueness, not_null, and relationships where applicable."
+    }
+  ]
+}
